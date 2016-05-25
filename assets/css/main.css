@@ -1998,8 +1998,8 @@ body {
 }
 
 body {
-    background-color: #2e3141;
-    background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
+    background-color: #ef6a32;
+    /*background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");*/
     background-size: auto, cover;
     background-attachment: fixed, fixed;
     background-position: center, center;
@@ -3102,7 +3102,7 @@ button:disabled,
     -webkit-transition: background-color 0.2s ease-in-out;
     -ms-transition: background-color 0.2s ease-in-out;
     transition: background-color 0.2s ease-in-out;
-    background-color: rgba(53, 56, 73, 0.95);
+    background-color: rgba(239,106,50, 0.95);
     height: 3.5em;
     left: 0;
     line-height: 3.5em;
@@ -3492,8 +3492,8 @@ body.is-menu-visible #menu .inner {
 
     #banner {
         padding: 7em 0 8.25em 0;
-        background-color: #2e3141;
-        background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
+        background-color: #ef6a32;
+        /*background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");*/
         background-size: auto, cover;
         background-position: center, center;
         margin-bottom: -6.5em;
@@ -3659,14 +3659,14 @@ body.is-loading #banner p {
     background-size: 100% 100%;
     content: '';
     display: block;
-    height: 6.5em;
+    height: 6.57em;
     position: absolute;
     width: 100%;
 }
 
 .wrapper:before {
     left: 0;
-    top: -6.5em;
+    top: -6.4em;
 }
 
 .wrapper:after {
@@ -3838,11 +3838,11 @@ body.is-loading #banner p {
     }
 
     .wrapper:before, .wrapper:after {
-        height: 4.75em;
+        height: 4.78em;
     }
 
     .wrapper:before {
-        top: -4.75em;
+        top: -4.74em;
     }
 
     .wrapper:after {
@@ -3873,11 +3873,11 @@ body.is-loading #banner p {
     }
 
     .wrapper:before, .wrapper:after {
-        height: 2.5em;
+        height: 2.52em;
     }
 
     .wrapper:before {
-        top: -2.5em;
+        top: -2.46em;
     }
 
     .wrapper:after {
