@@ -1,7 +1,5 @@
 /*
-	Solid State by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	Author: Hao Xiangpeng
 */
 
 (function($) {
@@ -59,7 +57,40 @@
 					leave:		function() { $header.removeClass('alt'); }
 				});
 
+				$('#one').scrollex({
+					initialize: function() {
+						$header.css('background-color','')
+					},
+					terminate: function () {
+						$header.css('background-color','')
+					},
+					enter:function () {
+						$header.css('background-color','#03c383')
+					},
+					leave: function () {
+						$header.css('background-color','')
+					}
+					
+				});
+				$('#two').scrollex({
+					initialize: function() {
+						$header.css('background-color','')
+					},
+					terminate: function () {
+						$header.css('background-color','')
+					},
+					enter:function () {
+						$header.css('background-color','#fbbf45')
+					},
+					leave: function () {
+						$header.css('background-color','')
+					}
+				});
+
 			}
+
+
+
 
 		// Menu.
 			var $menu = $('#menu');
