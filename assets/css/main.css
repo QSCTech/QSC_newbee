@@ -3305,8 +3305,8 @@ button:disabled,
     -ms-transition: opacity 0.35s ease, -ms-transform 0.35s ease;
     transition: opacity 0.35s ease, transform 0.35s ease;
     -webkit-overflow-scrolling: touch;
-    background: #4c5c96;
-    border-radius: 5px;
+    background: #03c383;
+    border-radius: 10px;
     display: block;
     max-width: 100%;
     opacity: 0;

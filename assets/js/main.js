@@ -1,197 +1,219 @@
 /*
-	Author: Hao Xiangpeng
-*/
+ Author: Hao Xiangpeng
+ */
 
-(function($) {
+(function ($) {
 
-	"use strict";
+    "use strict";
 
-	skel.breakpoints({
-		xlarge:	'(max-width: 1680px)',
-		large:	'(max-width: 1280px)',
-		medium:	'(max-width: 980px)',
-		small:	'(max-width: 736px)',
-		xsmall:	'(max-width: 480px)'
-	});
+    skel.breakpoints({
+        xlarge: '(max-width: 1680px)',
+        large: '(max-width: 1280px)',
+        medium: '(max-width: 980px)',
+        small: '(max-width: 736px)',
+        xsmall: '(max-width: 480px)'
+    });
 
-	$(function() {
+    $(function () {
 
-		var	$window = $(window),
-			$body = $('body'),
-			$header = $('#header'),
-			$banner = $('#banner');
+        var $window = $(window),
+            $body = $('body'),
+            $header = $('#header'),
+            $banner = $('#banner');
 
-		// Disable animations/transitions until the page has loaded.
-			$body.addClass('is-loading');
+        // Disable animations/transitions until the page has loaded.
+        $body.addClass('is-loading');
 
-			$window.on('load', function() {
-				window.setTimeout(function() {
-					$body.removeClass('is-loading');
-				}, 100);
-			});
+        $window.on('load', function () {
+            window.setTimeout(function () {
+                $body.removeClass('is-loading');
+            }, 100);
+        });
 
-		// Fix: Placeholder polyfill.
-			$('form').placeholder();
+        // Fix: Placeholder polyfill.
+        $('form').placeholder();
 
-		// Prioritize "important" elements on medium.
-			skel.on('+medium -medium', function() {
-				$.prioritize(
-					'.important\\28 medium\\29',
-					skel.breakpoint('medium').active
-				);
-			});
+        // Prioritize "important" elements on medium.
+        skel.on('+medium -medium', function () {
+            $.prioritize(
+                '.important\\28 medium\\29',
+                skel.breakpoint('medium').active
+            );
+        });
 
-		// Header.
-			if (skel.vars.IEVersion < 9)
-				$header.removeClass('alt');
+        // Header.
+        if (skel.vars.IEVersion < 9)
+            $header.removeClass('alt');
 
-			if ($banner.length > 0
-			&&	$header.hasClass('alt')) {
+        if ($banner.length > 0
+            && $header.hasClass('alt')) {
 
-				$window.on('resize', function() { $window.trigger('scroll'); });
+            $window.on('resize', function () {
+                $window.trigger('scroll');
+            });
 
-				$banner.scrollex({
-					bottom:		$header.outerHeight(),
-					terminate:	function() { $header.removeClass('alt'); },
-					enter:		function() { $header.addClass('alt'); },
-					leave:		function() { $header.removeClass('alt'); }
-				});
+            $banner.scrollex({
+                bottom: $header.outerHeight(),
+                terminate: function () {
+                    $header.removeClass('alt');
+                },
+                enter: function () {
+                    $header.addClass('alt');
+                },
+                leave: function () {
+                    $header.removeClass('alt');
+                }
+            });
+        }
 
-				$('#one').scrollex({
-					initialize: function() {
-						$header.css('background-color','')
-					},
-					terminate: function () {
-						$header.css('background-color','')
-					},
-					enter:function () {
-						$header.css('background-color','#03c383')
-					},
-					leave: function () {
-						$header.css('background-color','')
-					}
-					
-				});
-				$('#two').scrollex({
-					initialize: function() {
-						$header.css('background-color','')
-					},
-					terminate: function () {
-						$header.css('background-color','')
-					},
-					enter:function () {
-						$header.css('background-color','#fbbf45')
-					},
-					leave: function () {
-						$header.css('background-color','')
-					}
-				});
+        $('#one').scrollex({
+            mode:'top',
+            initialize: function () {
+                $header.css('background-color', '')
+            },
+            terminate: function () {
+                $header.css('background-color', '')
+            },
+            enter: function () {
+                $header.css('background-color', 'rgba(3, 199, 152,0.85)');
+                console.log('one in');
+            },
+            leave: function () {
+                $header.css('background-color', '');
+                console.log('one out');
+            }
+        });
+        $('#two').scrollex({
+            mode:'top',
+            initialize: function () {
+                $header.css('background-color', '')
+            },
+            terminate: function () {
+                $header.css('background-color', '')
+            },
+            enter: function () {
+                $header.css('background-color', 'rgba(225, 151, 5,0.85)');
+            },
+            leave: function () {
+                $header.css('background-color', '');
+                console.log('two out');
+            }
+        });
+        $('#three').scrollex({
+            mode:'top',
+            terminate: function () {
+                $header.css('background-color', '')
+            },
+            enter: function () {
+                $header.css('background-color', 'rgba(1, 68, 91,0.85)');
+            },
+            leave: function () {
+                $header.css('background-color', '');
+                console.log('two out');
+            }
+        });
 
-			}
 
+        // Menu.
+        var $menu = $('#menu');
 
+        $menu._locked = false;
 
+        $menu._lock = function () {
 
-		// Menu.
-			var $menu = $('#menu');
+            if ($menu._locked)
+                return false;
 
-			$menu._locked = false;
+            $menu._locked = true;
 
-			$menu._lock = function() {
+            window.setTimeout(function () {
+                $menu._locked = false;
+            }, 350);
 
-				if ($menu._locked)
-					return false;
+            return true;
 
-				$menu._locked = true;
+        };
 
-				window.setTimeout(function() {
-					$menu._locked = false;
-				}, 350);
+        $menu._show = function () {
 
-				return true;
+            if ($menu._lock())
+                $body.addClass('is-menu-visible');
 
-			};
+        };
 
-			$menu._show = function() {
+        $menu._hide = function () {
 
-				if ($menu._lock())
-					$body.addClass('is-menu-visible');
+            if ($menu._lock())
+                $body.removeClass('is-menu-visible');
 
-			};
+        };
 
-			$menu._hide = function() {
+        $menu._toggle = function () {
 
-				if ($menu._lock())
-					$body.removeClass('is-menu-visible');
+            if ($menu._lock())
+                $body.toggleClass('is-menu-visible');
 
-			};
+        };
 
-			$menu._toggle = function() {
+        $menu
+            .appendTo($body)
+            .on('click', function (event) {
 
-				if ($menu._lock())
-					$body.toggleClass('is-menu-visible');
+                event.stopPropagation();
 
-			};
+                // Hide.
+                $menu._hide();
 
-			$menu
-				.appendTo($body)
-				.on('click', function(event) {
+            })
+            .find('.inner')
+            .on('click', '.close', function (event) {
 
-					event.stopPropagation();
+                event.preventDefault();
+                event.stopPropagation();
+                event.stopImmediatePropagation();
 
-					// Hide.
-						$menu._hide();
+                // Hide.
+                $menu._hide();
 
-				})
-				.find('.inner')
-					.on('click', '.close', function(event) {
+            })
+            .on('click', function (event) {
+                event.stopPropagation();
+            })
+            .on('click', 'a', function (event) {
 
-						event.preventDefault();
-						event.stopPropagation();
-						event.stopImmediatePropagation();
+                var href = $(this).attr('href');
 
-						// Hide.
-							$menu._hide();
+                event.preventDefault();
+                event.stopPropagation();
 
-					})
-					.on('click', function(event) {
-						event.stopPropagation();
-					})
-					.on('click', 'a', function(event) {
+                // Hide.
+                $menu._hide();
 
-						var href = $(this).attr('href');
+                // Redirect.
+                window.setTimeout(function () {
+                    window.location.href = href;
+                }, 350);
 
-						event.preventDefault();
-						event.stopPropagation();
+            });
 
-						// Hide.
-							$menu._hide();
+        $body
+            .on('click', 'a[href="#menu"]', function (event) {
 
-						// Redirect.
-							window.setTimeout(function() {
-								window.location.href = href;
-							}, 350);
+                event.stopPropagation();
+                event.preventDefault();
 
-					});
+                // Toggle.
+                $menu._toggle();
 
-			$body
-				.on('click', 'a[href="#menu"]', function(event) {
+            })
+            .on('keydown', function (event) {
 
-					event.stopPropagation();
-					event.preventDefault();
+                // Hide on escape.
+                if (event.keyCode == 27)
+                    $menu._hide();
 
-					// Toggle.
-						$menu._toggle();
+            });
 
-				})
-				.on('keydown', function(event) {
-
-					// Hide on escape.
-						if (event.keyCode == 27)
-							$menu._hide();
-
-				});
-
-	});
+    });
 
 })(jQuery);
