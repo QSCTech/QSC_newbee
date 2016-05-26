@@ -67,7 +67,7 @@
         }
 
         $('#one').scrollex({
-            mode:'top',
+            mode: 'top',
             initialize: function () {
                 $header.css('background-color', '')
             },
@@ -76,15 +76,15 @@
             },
             enter: function () {
                 $header.css('background-color', 'rgba(3, 199, 152,0.85)');
-                console.log('one in');
+
             },
             leave: function () {
                 $header.css('background-color', '');
-                console.log('one out');
+
             }
         });
         $('#two').scrollex({
-            mode:'top',
+            mode: 'top',
             initialize: function () {
                 $header.css('background-color', '')
             },
@@ -96,11 +96,10 @@
             },
             leave: function () {
                 $header.css('background-color', '');
-                console.log('two out');
             }
         });
         $('#three').scrollex({
-            mode:'top',
+            mode: 'top',
             terminate: function () {
                 $header.css('background-color', '')
             },
@@ -109,7 +108,6 @@
             },
             leave: function () {
                 $header.css('background-color', '');
-                console.log('two out');
             }
         });
 
@@ -217,3 +215,5 @@
     });
 
 })(jQuery);
+
+console.log('我們正在尋找你！\n求是潮工作團隊是浙江大學最專業的學生組織\n如果balala\n請聯繫我吧');
