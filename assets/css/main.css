@@ -3102,7 +3102,7 @@ button:disabled,
     -webkit-transition: background-color 0.2s ease-in-out;
     -ms-transition: background-color 0.2s ease-in-out;
     transition: background-color 0.2s ease-in-out;
-    background-color: rgba(239,106,50, 0.95);
+    background-color: rgba(60, 60, 60, 0.4);
     height: 3.5em;
     left: 0;
     line-height: 3.5em;
@@ -3246,11 +3246,13 @@ button:disabled,
     }
 
 }
+
 /* Detail */
 
 #detail {
 
 }
+
 /* Menu */
 
 #page-wrapper {
@@ -3309,7 +3311,7 @@ button:disabled,
     -ms-transition: opacity 0.35s ease, -ms-transform 0.35s ease;
     transition: opacity 0.35s ease, transform 0.35s ease;
     -webkit-overflow-scrolling: touch;
-    background: #03c383;
+    background: #e6e6e6;
     border-radius: 10px;
     display: block;
     max-width: 100%;
@@ -3321,6 +3323,8 @@ button:disabled,
 #menu h2 {
     border-bottom: solid 2px rgba(255, 255, 255, 0.125);
     padding-bottom: 1em;
+    color: #1a1a1a;
+    font-weight: bold;
 }
 
 #menu .close {
@@ -3335,6 +3339,7 @@ button:disabled,
     overflow: hidden;
     position: absolute;
     right: 0;
+    color: #1a1a1a;
     text-align: center;
     text-indent: 4em;
     top: 0;
@@ -3357,15 +3362,16 @@ button:disabled,
     display: block;
     font-family: Raleway, Helvetica, sans-serif;
     font-size: 0.8em;
-    font-weight: 200;
     letter-spacing: 0.1em;
     line-height: 1.85em;
     padding: 0.75em 0;
     text-transform: uppercase;
+    color: #1a1a1a;
+    font-weight: bold;
 }
 
 #menu .links li a:hover {
-    background: #45558d;
+    background: #a6a6a6;
 }
 
 @media screen and (max-width: 736px) {
@@ -3460,6 +3466,8 @@ body.is-menu-visible #menu .inner {
     -ms-filter: blur(0);
     filter: blur(0);
     opacity: 1;
+    color: #ffffff;
+    text-shadow: 2px 2px 20px #000000;
     border-bottom: solid 2px rgba(255, 255, 255, 0.125);
     font-size: 2.25em;
     margin-bottom: 0.8em;
@@ -3489,6 +3497,7 @@ body.is-menu-visible #menu .inner {
     font-weight: 200;
     letter-spacing: 0.1em;
     line-height: 2;
+    text-shadow: 2px 2px 20px  #000;
     text-transform: uppercase;
 }
 
@@ -3498,6 +3507,7 @@ body.is-menu-visible #menu .inner {
         padding: 7em 0 8.25em 0;
         background-color: #ef6a32;
         /*background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");*/
+        background-image: url("../../images/bg4.jpg");
         background-size: auto, cover;
         background-position: center, center;
         margin-bottom: -6.5em;
@@ -4000,6 +4010,7 @@ body.is-loading #banner p {
     #footer {
         background-color: #2e3141;
         /*background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");*/
+
         background-size: auto, cover;
         background-position: center, center;
         margin-top: -6.5em;

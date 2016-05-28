@@ -211,9 +211,32 @@
                     $menu._hide();
 
             });
+        $('#footer').scrollex({
+            mode:top,
+            enter: function () {
+                $('.ds-powered-by').remove();
+                $('.ds-social-links').remove();
+                $('.ds-dialog-footer').remove();
+            }
+        });
+        $('#ds-reset').scrollex({
+            mode:top,
+            enter:function () {
+                $('.ds-dialog-footer').remove();
+            }
+        })
+
 
     });
 
 })(jQuery);
+
+// $(document).ready(
+//     $('.ds-powered-by').remove()
+// );
+$('.ds-powered-by').load(function () {
+    $('.ds-powered-by').remove();
+    alert('asa');
+});
 
 console.log('我們正在尋找你！\n求是潮工作團隊是浙江大學最專業的學生組織\n如果balala\n請聯繫我吧');

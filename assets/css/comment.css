@@ -1,0 +1,7 @@
+.ds-dialog-footer{
+    display: none !important;
+}
+
+#ds-wrapper #ds-reset button {
+    color: #555 !important;
+}
