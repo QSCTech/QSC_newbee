@@ -31,3 +31,24 @@
     font-weight:bold;
     color: #023D3D;
 }
+
+.ds-dialog-footer{
+    display: none !important;
+}
+
+#ds-wrapper #ds-reset button {
+    color: #555 !important;
+}
+
+
+.life-css{
+    background-image: url("../../images/life.jpg");
+    -webkit-background-size:;
+    background-size:100% 100%;
+    background-position: center center;
+    margin-bottom: -6.5em;;
+}
+
+.life-title{
+    color: #CC2359;
+}

@@ -2170,7 +2170,7 @@ h2 {
 }
 
 h3 {
-    font-size: 0.9em;
+    font-size: 1.5em;
 }
 
 h4 {
@@ -3507,7 +3507,7 @@ body.is-menu-visible #menu .inner {
         padding: 7em 0 8.25em 0;
         background-color: #ef6a32;
         /*background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");*/
-        background-image: url("../../images/bg7.jpg");
+        background-image: url("../../images/bg_f.jpg");
         background-size: 100% 100%;
         background-position: center, center;
         margin-bottom: -6.5em;
@@ -3533,9 +3533,7 @@ body.is-menu-visible #menu .inner {
     #banner {
         padding: 5em 2em 4.25em 2em;
         margin-bottom: -2.5em;
-        background-image: url("../../images/bg7.jpg");
-        background-size: 100% 100%;
-        background-position: center, center;
+
     }
 
     #banner .logo {
