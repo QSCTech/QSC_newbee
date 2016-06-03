@@ -211,20 +211,7 @@
                     $menu._hide();
 
             });
-        $('#footer').scrollex({
-            mode:top,
-            enter: function () {
-                $('.ds-powered-by').remove();
-                $('.ds-social-links').remove();
-                $('.ds-dialog-footer').remove();
-            }
-        });
-        $('#ds-reset').scrollex({
-            mode:top,
-            enter:function () {
-                $('.ds-dialog-footer').remove();
-            }
-        })
+
 
 
     });
