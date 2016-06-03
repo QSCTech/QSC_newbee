@@ -25,3 +25,9 @@
 .ds-post-repost{
     display: none !important;
 }
+
+
+.terminology{
+    font-weight:bold;
+    color: #023D3D;
+}

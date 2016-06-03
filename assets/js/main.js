@@ -75,7 +75,7 @@
                 $header.css('background-color', '')
             },
             enter: function () {
-                $header.css('background-color', 'rgba(150,197,78,0.85)');
+                $header.css('background-color', 'rgba(207,149,41,0.80)');
 
             },
             leave: function () {
@@ -92,7 +92,7 @@
                 $header.css('background-color', '')
             },
             enter: function () {
-                $header.css('background-color', 'rgba(225, 151, 5,0.85)');
+                $header.css('background-color', 'rgba(201, 95, 45,0.8)');
             },
             leave: function () {
                 $header.css('background-color', '');
@@ -104,13 +104,24 @@
                 $header.css('background-color', '')
             },
             enter: function () {
-                $header.css('background-color', 'rgba(1, 68, 91,0.85)');
+                $header.css('background-color', 'rgba(3, 89, 89,0.8)');
             },
             leave: function () {
                 $header.css('background-color', '');
             }
         });
-
+        $('#five').scrollex({
+            mode: 'top',
+            terminate: function () {
+                $header.css('background-color', '')
+            },
+            enter: function () {
+                $header.css('background-color', 'rgba(92, 16, 40,0.8)');
+            },
+            leave: function () {
+                $header.css('background-color', '');
+            }
+        });
 
         // Menu.
         var $menu = $('#menu');
