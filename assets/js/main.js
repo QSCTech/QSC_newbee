@@ -237,6 +237,15 @@ $('.ds-powered-by').load(function () {
     alert('asa');
 });
 
+var _hmt = _hmt || [];
+(function() {
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?d76956096fa7f63dd3dd61c0e830baa3";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+})();
+
+
 console.log('%c我们正在寻找你！' +
     '\n%c求是潮工作团队%c(http://www.zjuqsc.com)\n' +
     '%c是浙江大学最专业的学生组织\n' +
