@@ -1,39 +1,40 @@
-#ds-thread #ds-reset .ds-comment-body p{
+#ds-thread #ds-reset .ds-comment-body p {
     color: #ffffff !important;
 
 }
 
-.ds-user-name{
-    font-weight:bold !important;
+.ds-user-name {
+    font-weight: bold !important;
     color: #ffffff !important;
 }
 
-.jtico_jiathis{
+.jtico_jiathis {
     display: none !important;
 }
 
-.ds-post-report{
+.ds-post-report {
     display: none !important;
 }
 
-.ds-powered-by{
-    display: none !important;
-}
-.ds-social-links{
-    display: none !important;
-}
-.ds-post-repost{
+.ds-powered-by {
     display: none !important;
 }
 
+.ds-social-links {
+    display: none !important;
+}
 
-.terminology{
-    font-weight:bold;
+.ds-post-repost {
+    display: none !important;
+}
+
+.terminology {
+    font-weight: bold;
     color: #ffffff;
-    font-size:20px;
+    font-size: 20px;
 }
 
-.ds-dialog-footer{
+.ds-dialog-footer {
     display: none !important;
 }
 
@@ -41,11 +42,21 @@
     color: #555 !important;
 }
 
-
-.life-css{
+.life-css {
     background-image: url("../../images/life.jpg");
-    background-size:100% 100%;
+    background-size: 100% 100%;
     background-position: center center;
     margin-bottom: -6.5em;;
+}
+
+ol li {
+    padding-bottom: 1.2em;
+}
+
+ul li{
+    padding-bottom:0.1em;
+}
+.features-ol{
+    padding-bottom:1.2em;
 }
 
