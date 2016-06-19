@@ -60,3 +60,28 @@ ul li{
     padding-bottom:1.2em;
 }
 
+.wenxuan{
+    width:100% !important;
+    padding-bottom:2em;
+}
+
+#study-banner{
+    background-image: url("../../images/study_banner.jpg");
+    background-size: 100% 100% !important;
+    background-position: center center ;
+    margin-bottom: -6.5em;
+}
+
+#aca-banner{
+    background-image: url("../../images/acade.jpg");
+    background-size: 100% 100% !important;
+    background-position: center center ;
+    margin-bottom: -6.5em;
+}
+
+.study-inner{
+    color: #436e60 !important;
+}
+.study-inner h2{
+    color: #436e60 !important;
+}

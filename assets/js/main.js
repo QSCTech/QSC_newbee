@@ -116,7 +116,19 @@
                 $header.css('background-color', '')
             },
             enter: function () {
-                $header.css('background-color', 'rgba(92, 16, 40,0.8)');
+                $header.css('background-color', '#4c889e');
+            },
+            leave: function () {
+                $header.css('background-color', '');
+            }
+        });
+        $('#six').scrollex({
+            mode: 'top',
+            terminate: function () {
+                $header.css('background-color', '')
+            },
+            enter: function () {
+                $header.css('background-color', '#a94c42');
             },
             leave: function () {
                 $header.css('background-color', '');

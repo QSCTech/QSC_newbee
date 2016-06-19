@@ -34,3 +34,17 @@
 #ds-thread #ds-reset li.ds-post-placeholder{
     color: #000 !important;
 }
+
+#faq-banner{
+    background-image: url("../../images/faq.jpg");
+    background-size: 100% 100% !important;
+    background-position: center center ;
+    margin-bottom: -6.5em;
+}
+
+#faq-banner h2{
+    color: #8f7741;
+}
+#faq-banner {
+    color: #8f7741;
+}
