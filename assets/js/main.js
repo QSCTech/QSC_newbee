@@ -249,13 +249,6 @@ $('.ds-powered-by').load(function () {
     alert('asa');
 });
 
-var _hmt = _hmt || [];
-(function() {
-    var hm = document.createElement("script");
-    hm.src = "//hm.baidu.com/hm.js?d76956096fa7f63dd3dd61c0e830baa3";
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(hm, s);
-})();
 
 
 console.log('%c我们正在寻找你！' +
