@@ -75,7 +75,7 @@
                 $header.css('background-color', '')
             },
             enter: function () {
-                $header.css('background-color', 'rgba(207,149,41,0.80)');
+                $header.css('background-color', 'rgba(85,158,184,0.80)');
 
             },
             leave: function () {

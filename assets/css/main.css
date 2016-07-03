@@ -3322,6 +3322,7 @@ button:disabled,
     opacity: 0;
     position: relative;
     width: 18em;
+    margin:60px auto;
 }
 
 #menu h2 {
@@ -3392,12 +3393,12 @@ button:disabled,
 
 }
 
-body.is-menu-visible #page-wrapper {
-    -moz-filter: blur(10px);
-    -webkit-filter: blur(10px);
-    -ms-filter: blur(10px);
-    filter: blur(10px);
-}
+/*body.is-menu-visible #page-wrapper {*/
+    /*-moz-filter: blur(10px);*/
+    /*-webkit-filter: blur(10px);*/
+    /*-ms-filter: blur(10px);*/
+    /*filter: blur(10px);*/
+/*}*/
 
 body.is-menu-visible #menu {
     -moz-pointer-events: auto;
@@ -3465,10 +3466,10 @@ body.is-menu-visible #menu .inner {
     -webkit-transition-delay: 0.65s;
     -ms-transition-delay: 0.65s;
     transition-delay: 0.65s;
-    -moz-filter: blur(0);
-    -webkit-filter: blur(0);
-    -ms-filter: blur(0);
-    filter: blur(0);
+    /*-moz-filter: blur(0);*/
+    /*-webkit-filter: blur(0);*/
+    /*-ms-filter: blur(0);*/
+    /*filter: blur(0);*/
     opacity: 1;
     color: #ffffff;
     text-shadow: 2px 2px 20px #000000;
@@ -3491,10 +3492,10 @@ body.is-menu-visible #menu .inner {
     -webkit-transition-delay: 0.8s;
     -ms-transition-delay: 0.8s;
     transition-delay: 0.8s;
-    -moz-filter: blur(0);
-    -webkit-filter: blur(0);
-    -ms-filter: blur(0);
-    filter: blur(0);
+    /*-moz-filter: blur(0);*/
+    /*-webkit-filter: blur(0);*/
+    /*-ms-filter: blur(0);*/
+    /*filter: blur(0);*/
     opacity: 1;
     font-family: Raleway, Helvetica, sans-serif;
     font-size: 1em;
@@ -3572,10 +3573,10 @@ body.is-loading #banner h2 {
     -webkit-transform: translateX(0.25em);
     -ms-transform: translateX(0.25em);
     transform: translateX(0.25em);
-    -moz-filter: blur(2px);
-    -webkit-filter: blur(2px);
-    -ms-filter: blur(2px);
-    filter: blur(2px);
+    /*-moz-filter: blur(2px);*/
+    /*-webkit-filter: blur(2px);*/
+    /*-ms-filter: blur(2px);*/
+    /*filter: blur(2px);*/
 }
 
 body.is-loading #banner p {
@@ -3584,10 +3585,10 @@ body.is-loading #banner p {
     -webkit-transform: translateX(0.5em);
     -ms-transform: translateX(0.5em);
     transform: translateX(0.5em);
-    -moz-filter: blur(2px);
-    -webkit-filter: blur(2px);
-    -ms-filter: blur(2px);
-    filter: blur(2px);
+    /*-moz-filter: blur(2px);*/
+    /*-webkit-filter: blur(2px);*/
+    /*-ms-filter: blur(2px);*/
+    /*filter: blur(2px);*/
 }
 
 /* Wrapper */
