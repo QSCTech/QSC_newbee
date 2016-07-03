@@ -46,5 +46,9 @@
     color: #8f7741;
 }
 #faq-banner {
-    color: #8f7741;
+    color: #fcfcfc;
+}
+
+.faq-h3{
+    padding-top:1.5em;
 }
