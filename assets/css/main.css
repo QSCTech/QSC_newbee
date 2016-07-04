@@ -2020,7 +2020,7 @@ body.is-loading *, body.is-loading *:before, body.is-loading *:after {
 
 body, input, select, textarea {
     color: #ffffff;
-    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-family: "Source Sans Pro", Helvetica, sans-serif, "Microsoft YaHei", "微软雅黑", STXihei, "华文细黑", serif;
     font-size: 16.5pt;
     font-weight: 300;
     line-height: 1.65;
@@ -2085,7 +2085,7 @@ a.special:not(.button) {
     text-decoration: none;
     border-bottom: 0;
     display: block;
-    font-family: Raleway, Helvetica, sans-serif;
+    font-family: Raleway, Helvetica, sans-serif, "Microsoft YaHei", "微软雅黑", STXihei, "华文细黑", serif;
     font-size: 0.8em;
     font-weight: 700;
     letter-spacing: 0.1em;
@@ -2144,7 +2144,7 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
     color: #ffffff;
-    font-family: Raleway, Helvetica, sans-serif;
+    font-family: Raleway, Helvetica, sans-serif, "Microsoft YaHei", "微软雅黑", STXihei, "华文细黑", serif;
     font-weight: 700;
     letter-spacing: 0.1em;
     margin: 0 0 1em 0;
@@ -2898,7 +2898,7 @@ button,
     color: #ffffff !important;
     cursor: pointer;
     display: inline-block;
-    font-family: Raleway, Helvetica, sans-serif;
+    font-family: Raleway, Helvetica, sans-serif, "Microsoft YaHei", "微软雅黑", STXihei, "华文细黑", serif;
     font-size: 0.8em;
     font-weight: 700;
     height: 3.75em;
@@ -3134,7 +3134,7 @@ button:disabled,
 }
 
 #header nav {
-    font-family: Raleway, Helvetica, sans-serif;
+    font-family: Raleway, Helvetica, sans-serif, "Microsoft YaHei", "微软雅黑", STXihei, "华文细黑", serif;
     font-size: 0.8em;
     font-weight: 700;
     height: 3em;
@@ -3365,7 +3365,7 @@ button:disabled,
     border-radius: 5px;
     border: 0;
     display: block;
-    font-family: Raleway, Helvetica, sans-serif;
+    font-family: Raleway, Helvetica, sans-serif, "Microsoft YaHei", "微软雅黑", STXihei, "华文细黑", serif;
     font-size: 0.8em;
     letter-spacing: 0.1em;
     line-height: 1.85em;
@@ -3497,7 +3497,7 @@ body.is-menu-visible #menu .inner {
     /*-ms-filter: blur(0);*/
     /*filter: blur(0);*/
     opacity: 1;
-    font-family: Raleway, Helvetica, sans-serif;
+    font-family: Raleway, Helvetica, sans-serif, "Microsoft YaHei", "微软雅黑", STXihei, "华文细黑", serif;
     font-size: 1em;
     font-weight: 700;
     letter-spacing: 0.1em;
@@ -3610,7 +3610,7 @@ body.is-loading #banner p {
 }
 
 #wrapper > header p {
-    font-family: Raleway, Helvetica, sans-serif;
+    font-family: Raleway, Helvetica, sans-serif, "Microsoft YaHei", "微软雅黑", STXihei, "华文细黑", serif;
     font-size: 1em;
     font-weight: 200;
     letter-spacing: 0.1em;

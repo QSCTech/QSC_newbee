@@ -284,3 +284,12 @@ $(document).ready(function () {
         );
     })
 });
+
+var _hmt = _hmt || [];
+(function() {
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?3d79002933b635ec32f076574d8e3887";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+})();
+
