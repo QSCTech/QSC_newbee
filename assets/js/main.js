@@ -243,10 +243,6 @@
 // $(document).ready(
 //     $('.ds-powered-by').remove()
 // );
-$('.ds-powered-by').load(function () {
-    $('.ds-powered-by').remove();
-    alert('asa');
-});
 
 
 console.log('%c我们正在寻找你！' +
@@ -293,3 +289,6 @@ var _hmt = _hmt || [];
     s.parentNode.insertBefore(hm, s);
 })();
 
+if($(window).width()>1024){
+    $('.alert').css('display','block');
+}

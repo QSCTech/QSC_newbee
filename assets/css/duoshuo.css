@@ -105,28 +105,62 @@ ul li {
     background: rgba(95, 93, 96, 0.8) url(../fonts/cd-top-arrow.svg) no-repeat center 50%;
     visibility: hidden;
     opacity: 0;
-    -webkit-transition: opacity .3s 0s,visibility 0s .3s;
-    -moz-transition: opacity .3s 0s,visibility 0s .3s;
-    -ms-transition: opacity .3s 0s,visibility 0s .3s;
-    -o-transition: opacity .3s 0s,visibility 0s .3s;
-    transition: opacity .3s 0s,visibility 0s .3s;
+    -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+    -moz-transition: opacity .3s 0s, visibility 0s .3s;
+    -ms-transition: opacity .3s 0s, visibility 0s .3s;
+    -o-transition: opacity .3s 0s, visibility 0s .3s;
+    transition: opacity .3s 0s, visibility 0s .3s;
 }
 
-.cd-top.cd-is-visible,.cd-top.cd-fade-out,.no-touch .cd-top:hover{
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
 
-    -webkit-transition: opacity .3s 0s,visibility 0s .3s;
-    -moz-transition: opacity .3s 0s,visibility 0s .3s;
-    -ms-transition: opacity .3s 0s,visibility 0s .3s;
-    -o-transition: opacity .3s 0s,visibility 0s .3s;
-    transition: opacity .3s 0s,visibility 0s .3s;
+    -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+    -moz-transition: opacity .3s 0s, visibility 0s .3s;
+    -ms-transition: opacity .3s 0s, visibility 0s .3s;
+    -o-transition: opacity .3s 0s, visibility 0s .3s;
+    transition: opacity .3s 0s, visibility 0s .3s;
 }
 
-.cd-top.cd-is-visible{
+.cd-top.cd-is-visible {
     visibility: visible;
-    opacity:1;
+    opacity: 1;
 }
 
 .cd-top.cd-fade-out {
     opacity: .5;
+}
+
+.alert {
+    background-color: #c4453c;
+    color: #f6f6f6;
+    display: none;
+    font: bold 16px/40px sans-serif;
+    height: 40px;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    top: -45px;
+    width: 100%;
+
+    -webkit-animation:alert 1s ease forwards;
+    -o-animation:alert 1s ease forwards;
+    animation:alert 1s ease forwards;
+}
+
+@keyframes alert {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        top: 70px;
+    }
+}
+
+#alert:traget{
+    display: none;
+    position: relative;
 }
 
