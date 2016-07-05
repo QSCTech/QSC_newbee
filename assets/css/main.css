@@ -3506,13 +3506,13 @@ body.is-menu-visible #menu .inner {
     text-transform: uppercase;
 }
 
-@media screen and (max-width: 2000px) {
+@media screen and (max-width: 2600px) {
 
     #banner {
         padding: 7em 0 8.25em 0;
         background-color: #ef6a32;
         /*background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");*/
-        background-image: url("../../images/bg_sun2.jpg");
+        background-image: url("../../images/bg_sun_wide.jpg");
         background-size: 100% 100%;
         background-position: center, center;
         margin-bottom: -6.5em;
@@ -3525,6 +3525,11 @@ body.is-menu-visible #menu .inner {
     #banner {
         padding: 12em 3em 12.375em 3em;
         margin-bottom: -4.75em;
+
+        background-image: url("../../images/bg_sun_large.jpg");
+        background-size: 100% 100%;
+        background-position: center, center;
+
     }
 
     #banner .inner {
@@ -3538,6 +3543,11 @@ body.is-menu-visible #menu .inner {
     #banner {
         padding: 5em 2em 4.25em 2em;
         margin-bottom: -2.5em;
+        background-color: #ef6a32;
+        /*background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");*/
+        background-image: url("../../images/bg_f_small.jpg");
+        background-size: 100% 100%;
+        background-position: center, center;
 
     }
 
