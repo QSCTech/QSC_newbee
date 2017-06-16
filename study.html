@@ -34,16 +34,39 @@
     </header>
 
     <!-- Menu -->
+    <!-- Menu -->
     <nav id="menu">
         <div class="inner">
             <h2>Menu</h2>
-            <ul class="links">
+            <ul class="links" id="all">
                 <li><a href="index.html">首页</a></li>
-                <li><a href="life.html">在浙里的生活</a></li>
-                <li><a href="study.html">入学准备</a></li>
-                <li><a href="academic.html">日常学习</a></li>
+                <li><a id="life">在浙里的生活</a></li>
+                <li><a id="study">入学准备</a></li>
+                <li><a id="academic">日常学习</a></li>
                 <li><a href="http://f.zjuqsc.com">旧版新生手册</a></li>
-                <li><a href="faq.html">所有人问所有人</a></li>
+            </ul>
+            <ul class="links hide" id="life-m">
+                <li><a href="life.html#black">浙大黑话</a></li>
+                <li><a href="life.html#fix">维修维护</a></li>
+                <li><a href="life.html#operators">新生通讯服务指南</a></li>
+                <li><a href="life.html#shop">购物章</a></li>
+                <li><a href="life.html#print">文印、护理</a></li>
+                <li><a href="life.html#cloth">衣食住行</a></li>
+            </ul>
+            <ul class="links hide" id="study-m">
+                <li><a href="study.html#school">竺可桢学院及求是学院三大学园</a></li>
+                <li><a href="study.html#group">新生群</a></li>
+                <li><a href="study.html#list">必备清单</a></li>
+                <li><a href="study.html#live">入住宿舍</a></li>
+                <li><a href="study.html#mesg">常用信息</a></li>
+            </ul>
+            <ul class="links hide" id="academic-m">
+                <li><a href="academic.html#select">选课入门</a></li>
+                <li><a href="academic.html#tips">选课小贴士</a></li>
+                <li><a href="academic.html#preview">课程概览</a></li>
+                <li><a href="academic.html#books">资料获取</a></li>
+                <li><a href="academic.html#self">自习攻略</a></li>
+                <li><a href="academic.html#more">更多教学资源</a></li>
             </ul>
             <a href="#" class="close">Close</a>
         </div>
@@ -61,24 +84,7 @@
         <!-- Content -->
         <div class="wrapper">
             <div class="inner">
-
-                <h3 class="major">懂得浙大 —— 119年根基，求是精神代代传</h3>
-                <p>竺可桢问
-                    竺可桢老校长之于浙大，如梅贻琦先生之于清华，蔡元培先生之于北大。竺校长有一句名言：
-                    诸位在校有两个问题要问问自己：
-                    第一，到浙大来做什么？
-                    第二，将来毕业后要做什么样的人？
-                    这将是陪伴同学们大学四年及至一生的问题，希望你能在思考中有所收获，理解竺校长提这两个问题的良苦用心。
-
-                <p>浙大概况
-                    浙江大学是一所历史悠久、声誉卓著的高等学府，前身求是书院创立于1897年，为中国人自己最早创办 的新式高等学校之一。在将近一百二十年的办学历程中，浙江大学逐渐形成了以“求是创新”为校训的优良传统。
-                    浙江大学是一所特色鲜明、在海内外有较大影响的综合型、研究型大学，其学科涵盖哲学、经济学、法学、教育学、文学、历史学等
-                    十二个门类。学校设有7个学部，36个学院（系）。拥有一级学科国家重点学科14个，二级学科国家重点学科21个。据ESI公布的数据，截至2016年1
-                    月，我校18个学科进入世界学术机构前1%，居全国高校第二；7个学科进入世界前100位，4个学科进入世界前50位，居全国高校第一。
-                </p>
-                <a class="image"><img class="wenxuan" src="images/wenxuan.jpg"></a>
-                <a class="image"><img class="wenxuan" src="images/wenxuan2.jpg"></a>
-                <h3 class="major">两大学院三大学园</h3>
+                <h3 class="major" id="school">竺可桢学院及求是学院三大学园</h3>
 
                 <section class="features">
                     <article>
@@ -88,7 +94,7 @@
                             竺 可桢学院是浙江大学对优秀本科生实施“特别培养”和“精英培养”的荣誉学院，是实施英才教育、培养优秀本科生的一个重要基地。学院毕业生前景广阔，国内外读研率达90%，其中出
                             国读研率在40%以上。
                             目前，竺可桢学院除设有竺可桢学院混合班及多个求是科学班外，还设有巴德年医学班等同兄弟学院联合培养的班级，以及工程教育高级班等个专业外辅修方式的交叉复合型本科人才培养平台。
-                            更多信息请访问 竺可桢学院首页。
+                            更多信息请访问 <a href="http://ckc.zju.edu.cn/">竺可桢学院首页</a>。
                         </p>
 
                     </article>
@@ -138,10 +144,7 @@
 
                 </section>
 
-                <h3 class="major">开学大准备 —— 滴水不漏的行李箱</h3>
-
-
-                <h3 class="major">新生群——学长学姐带你飞</h3>
+                <h3 class="major" id="group">新生群——学长学姐带你飞</h3>
                 <p>
                     每一年，浙江大学都会有一群人在浙大新生群里找到自己的小伙伴，并通过向群里的学长学姐提问提前为开学之后的生活做热身，今年也不例外。暑假里结识的新朋友有可能成为陪伴你未来四年甚至更久的好友哦，戳进去就是一个新的世界！</p>
                 <p>
@@ -168,7 +171,7 @@
                     大群1 553092742 <br>
                     大群2 319422803 <br>
                 </p>
-                <h3 class="major">必备清单</h3>
+                <h3 class="major" id="list">必备清单</h3>
                 <section class="features">
                     <article>
                         <a href="#" class="image"><img src="images/cer.jpg" alt=""/></a>
@@ -259,7 +262,7 @@
                         </p>
                     </article>
 
-                    <h3 class="major">入住宿舍 —— 四年存在于此的证明</h3>
+                    <h3 class="major" id="live">入住宿舍 —— 四年存在于此的证明</h3>
                     <p>
                         来到浙大的第一件事就是要入住宿舍。怀着惴惴不安的心，幻想着未来四年宿舍的美好模样。宿舍就是你未来的家，是你四年生活于此和实现自我的最好见证，也是你和舍友留下无数美好回忆的地方。所以提前了解这个“家”可是重中之重哦。以下主要介绍了各宿舍的住宿条件和一些入住提示，如需研究宿舍的周边商家或环境，请查看生活章节。不知道住在哪里？问问学长或者查看三大学园的相关介绍吧。
                     </p>
@@ -308,7 +311,7 @@
                         </li>
                     </ol>
                     </p>
-                    <h3 class="major">TIPS</h3>
+                    <h3 class="major" id="TIPS">TIPS</h3>
                     <p>
                     <ol>
                         <li>空调
@@ -351,7 +354,7 @@
                     </p>
 
 
-                    <h3 class="major">常用信息——帮你解决生活中的疑难杂症</h3>
+                    <h3 class="major" id="mesg">常用信息——帮你解决生活中的疑难杂症</h3>
                     <p>在校医院看病，要去哪里报销？与想选的课失之交臂，该去哪里做最后的争取？别人都有水卡，为什么我只能靠“借”维生？教材去哪领？东西丢了去哪儿找？人丢了去哪儿报警？——一切尽在《常用信息》
                     </p>
                     <p>常用地点

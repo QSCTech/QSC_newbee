@@ -203,17 +203,29 @@
             .on('click', 'a', function (event) {
 
                 var href = $(this).attr('href');
+                if(href !== undefined) {
 
-                event.preventDefault();
-                event.stopPropagation();
+                    event.preventDefault();
+                    event.stopPropagation();
 
-                // Hide.
-                $menu._hide();
+                    // Hide.
+                    $menu._hide();
 
-                // Redirect.
-                window.setTimeout(function () {
-                    window.location.href = href;
-                }, 350);
+                    // Redirect.
+                    window.setTimeout(function () {
+                        window.location.href = href;
+                    }, 350);
+
+                } else {
+                    const id = $(this).attr('id');
+                    const menu = document.getElementById(id + '-m');
+                    $(menu).toggleClass('hide');
+                    $(document.getElementById("all")).addClass('hide');
+
+
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
 
             });
 
@@ -252,7 +264,7 @@ console.log('%c我们正在寻找你！' +
     '充满激情、心怀梦想\n' +
     '%c请联系:' +
     'https://joinus.zjuqsc.com \n' +
-    '或者直接发邮件到 haoxiangpeng@hotmail.com',
+    '或者直接发邮件到 keao.yang@yahoo.com',
     'font-weight:bold;color:#ed0345; font-size:300%',
     'color:#017351;font-size:150%',
     'color:#017351;font-size:100%',

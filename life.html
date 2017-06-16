@@ -24,6 +24,11 @@
         var _speedMark = new Date();
     </script>
 
+    <style>
+        .hide {
+            display: none
+        }
+    </style>
 </head>
 <body>
 
@@ -42,13 +47,35 @@
     <nav id="menu">
         <div class="inner">
             <h2>Menu</h2>
-            <ul class="links">
+            <ul class="links" id="all">
                 <li><a href="index.html">首页</a></li>
-                <li><a href="life.html">在浙里的生活</a></li>
-                <li><a href="study.html">入学准备</a></li>
-                <li><a href="academic.html">日常学习</a></li>
+                <li><a id="life">在浙里的生活</a></li>
+                <li><a id="study">入学准备</a></li>
+                <li><a id="academic">日常学习</a></li>
                 <li><a href="http://f.zjuqsc.com">旧版新生手册</a></li>
-                <li><a href="faq.html">所有人问所有人</a></li>
+            </ul>
+            <ul class="links hide" id="life-m">
+                <li><a href="life.html#black">浙大黑话</a></li>
+                <li><a href="life.html#fix">维修维护</a></li>
+                <li><a href="life.html#operators">新生通讯服务指南</a></li>
+                <li><a href="life.html#shop">购物章</a></li>
+                <li><a href="life.html#print">文印、护理</a></li>
+                <li><a href="life.html#cloth">衣食住行</a></li>
+            </ul>
+            <ul class="links hide" id="study-m">
+                <li><a href="study.html#school">竺可桢学院及求是学院三大学园</a></li>
+                <li><a href="study.html#group">新生群</a></li>
+                <li><a href="study.html#list">必备清单</a></li>
+                <li><a href="study.html#live">入住宿舍</a></li>
+                <li><a href="study.html#mesg">常用信息</a></li>
+            </ul>
+            <ul class="links hide" id="academic-m">
+                <li><a href="academic.html#select">选课入门</a></li>
+                <li><a href="academic.html#tips">选课小贴士</a></li>
+                <li><a href="academic.html#preview">课程概览</a></li>
+                <li><a href="academic.html#books">资料获取</a></li>
+                <li><a href="academic.html#self">自习攻略</a></li>
+                <li><a href="academic.html#more">更多教学资源</a></li>
             </ul>
             <a href="#" class="close">Close</a>
         </div>
@@ -67,7 +94,7 @@
         <div class="wrapper">
             <div class="inner">
 
-                <h3 class="major">浙大黑话</h3>
+                <h3 class="major" id="black">浙大黑话</h3>
                 <p><span class="terminology">BG</span>:请客。（bg-报告，据传有作研究报告的人成功后请客吃饭的惯例，故bg又意请客）
                 <p><span class="terminology">打卡</span>：运动签到，一学期要满60次。
                 <p><span class="terminology">北街</span>：从蓝田学院大门口的北部通道出去，在紫金港校区正北方的一条集文印，咖啡馆，
@@ -84,40 +111,7 @@
                 <p><span class="terminology">萝卜车</span>：一款浙大自主研发的校园微公交车，采用锂电池供电，最高时速可达25公里/小时，在满电情况下可行驶100公里。可通过手机APP萝卜车实现对其的租赁。
                 <p><span class="terminology">求是大鸡腿</span>：浙大有名的小吃，各大烧烤摊有售。</p>
 
-                <h3 class="major">社团一览</h3>
-
-
-                <h3 class="terminology">文化艺术类</h3>
-                <a class="image"><img src="images/association_1.png" style="
-    width: 100%;"></a>
-                <h3 class="terminology">实践公益类</h3>
-                <a class="image"><img src="images/association_2.png" style="
-    width: 100%;
-"></a>
-                <h3 class="terminology">学术科技类</h3>
-                <a class="image"><img src="images/association_3.png" style="
-    width: 100%;
-"> </a>
-                <h3 class="terminology">兴趣爱好类</h3>
-                <a class="image"><img src="images/association_4.png" style="
-    width: 100%;
-"> </a>
-                <h3 class="terminology">体育运动类</h3>
-                <a class="image"><img src="images/association_5.png" style="
-    width: 100%;
-"> </a>
-                <h3>浙江大学学生社团联合会</h3>
-                <p>
-                    <a href="http://mp.weixin.qq.com/s?__biz=MjM5NTE4NTIyMg==&mid=505793443&idx=1&sn=02c860e7a86915acf3e3ac3b67db1201&scene=1&srcid=07107InhT6qbi9K96zFjRGH4&from=singlemessage&isappinstalled=0#wechat_redirect">浙江大学学生社团联合会</a>是由共青团浙江大学委员会指导，对浙江大学现有的146家社团进行统一管理、引导、服务和监督的学生组织。<br>
-                    她成立于2006年6月，以“社团之家”为角色定位，不断推进社团文化建设，力争为浙大社团人营造一个和谐良好的发展环境，提供一个更大的发展舞台。
-                </p>
-                <h3>浙江大学礼仪队</h3>
-                <p>
-                    浙江大学礼仪队建队于1983年，最初有体操队的部分成员组成，距今已有三十年。以往队员都是身高165cm以上、面容姣好的女生。今年首次招收了身高185cm以上的男生。现任队长梁思姝，带队老师蒋老师。分为宣传部，运营部和人资部。</p>
-                <a class="image"><img src="images/li1.jpg" style=" width: 100%;"> </a>
-                <a class="image"><img src="images/li2.jpg" style=" width: 100%;"> </a>
-                <a class="image"><img src="images/li3.jpg" style=" width: 100%;"> </a>
-                <h3 class="major">维修维护</h3>
+                <h3 class="major" id="fix">维修维护</h3>
                 <p>配钥匙 、 修表 、 修拉链 --- 翠柏沿街
                 <p>修伞 、 拉杆箱--- 不定时出现在云峰、丹青、蓝田门口
                 <p>修自行车 --- 各学园车库 、 东1A车库旁 、 西1车库内
@@ -125,8 +119,41 @@
                 <p>电信网点 、 闪讯办理 --- 大食堂北侧丹阳沿街
                 <p>计算机维修 --- 蓝田沿街 、 白沙综合楼一楼二楼 、 堕落街 、 东三200“e志者”协会
 
+                <h3 class="major" id="operators">新生通讯服务指南</h3>
+                <ul>
+                    <li>关于手机号码</li>
+                    对于大部分非杭州本地的新生来说，开学后必然需要更换一张本地手机卡，在此对三大手机通信运营商：移动、联通、电信做一个简单的介绍，以便同学们了解真实情况，在信息对称的情况下做出正确选择。
+                    <ol>
+                        <li>中国移动：</li>
+                        约有85%的浙大学子选择中国移动。中国移动的高校虚拟网可在全省范围内免费使用（虚拟网内通话及短信无限量使用）。加入移动高校虚拟网，用短号互相联系，已成为浙大学生（及老师）之间沟通交流的习惯。移动4G上网速度快，且套餐内赠送的免费流量较多。
+                        <li>中国电信：</li>
+                        中国电信的套餐资费与移动差不多，包含的免费流量略少，但有部分免费的通话分钟数赠送，所以也有部分同学选择中国电信。值得注意的是，三家运营商中只有电信是必办合约机业务（因电信为CDMA制式，家里带来的手机可能会不匹配）。且该合约机有一定在网期限要求（一般是两年），如果中途换号即视为违约，需支付一定的违约费。合约到期后可任意处置，同学们可根据自己的情况适当做选择。
+                        <li>中国联通：</li>
+                        中国联通的月租费较低，4G上网速度较快，具有一定性价比，这就为乐于节省的童鞋们带去了福利。
+                    </ol>
+                    总之，具体选哪家运营商，取决于个人的消费习惯，持有的手机支持网络制式等方面的因素。也可问问学长学姐的选择做参考哦！
 
-                <h3 class="major">购物章</h3>
+                    Tips:在开学报到期间，三大运营商都会在校内设置服务点为新生办理优惠，建议新生到校后尽早选用本地号码，不但能享受各种优惠服务、方便校内联系，还能省不少话费。
+
+
+                    <li>关于校园网络的说明：</li>
+                    学校为每位新生都配置了免费的校园VPN宽带，账号即为学号，
+                    初始密码为身份证后六位，同学们到校后在学生宿舍、教学区内可直接使用该VPN账号通过有线或无线网的方式访问所有校内外网络。另外，学校今年对校园VPN进行了全面提速升级，网速较之前有了大幅提高。
+                    <ol>
+                        <li><a href="http://myvpn.zju.edu.cn/login.action" target="_blank">有线网络（VPN）</a></li>
+                        学校在宿舍为每个同学都配备了上网端口，大家只需自带网线就可以上网啦。目前有线网络有2M、6M、12M三种套餐，每月对应的费用分别是10元、30元、 50元。同学们可以根据需要任意选择其中一种。
+                        <li><a href="http://myvpn.zju.edu.cn/login.action" target="_blank">无线网络（ZJUWLAN）</a></li>
+                        浙大校园内有免费的无线网络，经过几年来的不断升级，已基本实现了各校区内无死角覆盖，信号强到连地下室都搜得到！
+                        办理任一VPN套餐后就可以使用校园无线网络啦！使用方法：连接 SSID名为“ZJUWLAN”的无线信号，连接后点击任一网页，就会自动跳转到认证页面，输入用户名和密码即可登录。
+                        <li>电信闪讯</li>
+                        除学校提供的免费的VPN宽带之外，同学们还可选择办理电信闪讯宽带，但需预交一定费用并绑定电信手机（因登录时要接受动态密码）。
+                        <li>内网资源</li>
+                        无论你选用哪种宽带套餐，都可以访问浙大丰富的内网资源，比如NHD就是内网中一个分享各种无损音乐和高清电影的网站。对于热门的资源，只要你的网络信号够好，内网下载速度可以达到10MB/s，并不会受到外网带宽限制。大家可要好好挖掘和利用内网资源哟
+                        ！
+                    </ol>
+                </ul>
+
+                <h3 class="major" id="shop">购物章</h3>
                 <p></p>
                 <section class="features">
                     <article>
@@ -158,7 +185,7 @@
                         <p>Tips： 开学之后购买教材可以到书店去淘淘宝， 有很多二手书五折出售， 但是却都还很新呢。
                         <p>报刊亭 ---白沙综合楼旁 、 蓝田云峰交叉口
                         <p>礼品文具 --- 各学园生活区
-                        <p>室内健身 --- 风雨操场--- 宿舍楼下健身房 ---游泳池下健身房
+                        <p>室内健身 --- 风雨操场 --- 宿舍楼下健身房 --- 游泳池下健身房 --- 东三健身房
                         </p>
 
                     </article>
@@ -171,13 +198,14 @@
                         <p> 中通 、韵达 --- 蓝田
                         <p>天天 --- 堕落街望月公寓内
                         <p>当当 、 天猫 、 国通 、 京东 --- 白沙综合楼农行门口
+                        <p>京东 --- 北街港湾家园沿街
                         <p>Tips：邮递取货点时有变动，大家取快递时要看准短信噢~如果时间不方便，不如让同学带着你的有效证件代为领取，或者让服务点帮你多留两天吧~
                         </p>
                     </article>
 
                 </section>
 
-                <h3 class="major">文印、护理</h3>
+                <h3 class="major" id="print">文印、护理</h3>
                 <section class="features">
                     <article>
                         <a class="image"><img src="images/lib2.png" alt=""/></a>
@@ -203,7 +231,7 @@
 
                 </section>
                 <p></p>
-                <h3 class="major">衣食住行</h3>
+                <h3 class="major" id="cloth">衣食住行</h3>
                 <p></p>
                 <section class="features">
 
@@ -264,15 +292,6 @@
         </div>
 
     </section>
-    <!-- 多说评论框 start -->
-    <section id="footer">
-        <div class="inner">
-            <h2 class="major">所有人问所有人</h2>
-            <div class="ds-thread" data-thread-key="01" data-title="test"
-                 data-url="http://newbee.haoxiangpeng.me:8000/"></div>
-        </div>
-    </section>
-    <!-- 多说评论框 end -->
     <a href="#" class="cd-top">Top</a>
 </div>
 
@@ -284,18 +303,6 @@
 <!--[if lte IE 8]>
 <script src="assets/js/ie/respond.min.js"></script><![endif]-->
 <script src="assets/js/main.js"></script>
-<script type="text/javascript">
-    var duoshuoQuery = {short_name: "qscnewbee"};
-    (function () {
-        var ds = document.createElement('script');
-        ds.type = 'text/javascript';
-        ds.async = true;
-        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-        ds.charset = 'UTF-8';
-        (document.getElementsByTagName('head')[0]
-        || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
-</script>
 
 </body>
 </html>
