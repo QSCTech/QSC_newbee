@@ -164,8 +164,13 @@
 
         $menu._hide = function () {
 
-            if ($menu._lock())
+            if ($menu._lock()){
+                $(document.getElementById("all")).removeClass("hide");
+                $(document.getElementById("life-m")).addClass("hide");
+                $(document.getElementById("study-m")).addClass("hide");
+                $(document.getElementById("academic-m")).addClass("hide");
                 $body.removeClass('is-menu-visible');
+            }
 
         };
 
@@ -255,21 +260,6 @@
 // $(document).ready(
 //     $('.ds-powered-by').remove()
 // );
-
-
-console.log('%c我们正在寻找你！' +
-    '\n%c求是潮工作团队%c(http://www.zjuqsc.com)\n' +
-    '%c是浙江大学最专业的学生组织\n' +
-    '如果你也执着、认真、\n' +
-    '充满激情、心怀梦想\n' +
-    '%c请联系:' +
-    'https://joinus.zjuqsc.com \n' +
-    '或者直接发邮件到 keao.yang@yahoo.com',
-    'font-weight:bold;color:#ed0345; font-size:300%',
-    'color:#017351;font-size:150%',
-    'color:#017351;font-size:100%',
-    'color:#03c383;font-size:150%',
-    'color:#03c383;font-size:100%');
 
 $(document).ready(function () {
     var offset = 300,

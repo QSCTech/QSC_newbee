@@ -44,6 +44,10 @@ table {
     border-spacing: 0;
 }
 
+.hide {
+    display: none;
+}
+
 body {
     -webkit-text-size-adjust: none;
 }
